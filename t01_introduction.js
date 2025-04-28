@@ -1,21 +1,20 @@
 /********************
  Intro to JS
  Written by Priya Silwal
- Written in week 1 of term 2
+ Written in 29/04/2025
+ Purpose: Getting familiar to javascript
  *******************/
-console.log("Running t01_introduction.js");
+console.log("Hello World");
 
 //Variables
+let userMoney = 0;
 
 
 /**********
  Main Code
- * **********/
+ ***********/
 
 
 
 
 
-/**********
- Main Code
- * **********/
