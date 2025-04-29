@@ -7,7 +7,7 @@
 console.log("Hello World");
 
 //Variables
-let userMoney = 0;
+
 
 
 /**********
