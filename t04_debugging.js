@@ -4,17 +4,19 @@
  Written in 30/04/2025
  Purpose: Learning how to debug
  *******************/
-console.log("Task 4 - Debugging")
+
+console.log("Task 4 - Debugging");
+
+
+// Variables//
+var length = 8;
+var width = 10
 
 // calculate the area
 var area = length + width;
 
 // calculate the perimeter
-var perimeter = 2  length + 2 * width; 
-
-// Set up the size of the page.
-var length = 8;
-var width = 10
+var perimeter = 2*(length+width); 
 
 // Display the results
 console.log("A area of a piece of paper with a length of "+length+", and a width of "+width+" is "+ area)
