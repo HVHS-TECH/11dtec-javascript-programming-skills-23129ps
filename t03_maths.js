@@ -1,5 +1,5 @@
 /********************
- Intro to JS
+ Mathematical operations
  Written by Priya Silwal
  Written in 30/04/2025
  Purpose: Using mathematical operations
