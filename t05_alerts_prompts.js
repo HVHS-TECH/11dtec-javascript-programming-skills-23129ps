@@ -12,7 +12,7 @@
 
 
  //Variables
- var userName = prompt("What is your name?");
+ var userName;
  var userAge;
  var money;
  
