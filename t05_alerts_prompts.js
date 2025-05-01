@@ -16,11 +16,11 @@
 /**********
   Main Code
 ***********/
- alert("Hi", userName);
- console.log("As of", currentYear, "you are", userAge, "years old");
- console.log("In 10 years you will be", userAge+10, "years old");
- console.log("You have", pocketMoney, "dollars");
- console.log("Half of your money is", pocketMoney/2);
+ alert("Hi " + userName);
+ console.log("As of"+ currentYear+ "you are"+ userAge+ "years old");
+ console.log("In 10 years you will be"+ userAge+10+ "years old");
+ console.log("You have"+ pocketMoney+ "dollars");
+ console.log("Half of your money is"+ pocketMoney/2);
 
  
 
