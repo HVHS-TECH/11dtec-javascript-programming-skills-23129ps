@@ -5,14 +5,13 @@
  Purpose: Getting familiar with Alerts & prompts
  *******************/
  alert("Welcome to the website!");
- prompt("What is your name?");
  prompt("What is your age?");
  prompt("How much pocket money they have?");
  alert("Welcome to the website!");
 
 
  //Variables
- var userName;
+ var userName = prompt("What is your name?");
  var userAge;
  var money;
  
