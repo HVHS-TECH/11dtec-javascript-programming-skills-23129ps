@@ -16,11 +16,11 @@
 /**********
   Main Code
 ***********/
-  alert("Hi " + userName);
+  alert("Hi " + userName+".");
   alert("As of "+ currentYear+ " you are "+ userAge+ " years old.");
   alert("In 10 years you will be "+ (userAge+10) + " years old.");
   alert("You have "+ money+ " dollars."); 
-  alert("Half of your money is "+ money/2);
+  alert("Half of your money is "+ money/2+ " dollars.");
 
  
 
