@@ -17,7 +17,7 @@
   Main Code
 ***********/
   alert("Hi " + userName);
-  alert("As of "+ currentYear+ "you are "+ userAge+ " years old.");
+  alert("As of "+ currentYear+ " you are "+ userAge+ " years old.");
   alert("In 10 years you will be "+ (userAge+10) + " years old.");
   alert("You have "+ pocketMoney+ " dollars."); 
   alert("Half of your money is "+ pocketMoney/2);
