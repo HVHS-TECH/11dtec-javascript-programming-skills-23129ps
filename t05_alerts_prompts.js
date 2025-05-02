@@ -8,8 +8,8 @@
 
  //Variables
  var userName = prompt("What is your name?");
- var userAge = prompt("What is your age?");
- var money = prompt("How much pocket money they have?");
+ var userAge = Number(prompt("What is your age?"));
+ var money = Number(prompt("How much pocket money they have?"));
  var currentYear = 2025;
  
  
