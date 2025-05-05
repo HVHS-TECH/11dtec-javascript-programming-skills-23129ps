@@ -24,6 +24,7 @@
   alert("You have "+ money+ " dollars."); 
   alert("Half of your money is "+ money/2+ " dollars.");
   alert(array[choice]);
+  if (userAge)
  
 
 
