@@ -11,6 +11,8 @@
  var userAge = Number(prompt("What is your age?"));
  var money = Number(prompt("How much pocket money they have?"));
  var currentYear = 2025;
+ let array =["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
+ let choice= prompt("On a scale of 0-3 how much do you like chocolate");
  
  
 /**********
@@ -21,7 +23,7 @@
   alert("In 10 years you will be "+ (userAge+10) + " years old.");
   alert("You have "+ money+ " dollars."); 
   alert("Half of your money is "+ money/2+ " dollars.");
-
+  alert(array[choice]);
  
 
 
