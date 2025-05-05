@@ -32,7 +32,7 @@
   }
   
   for (let count = 0; count<5; count++) {
-  userNumberChoice = prompt('Enter a number:');
+  userNumberChoice = prompt('Enter a number between 0 to 5');
   userNumberChoice = Number(userNumberChoice);
   userTotal = userTotal + userNumberChoice; 
   }
