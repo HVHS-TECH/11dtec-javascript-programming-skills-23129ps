@@ -30,8 +30,10 @@
     alert("You can afford a chocolate bar");
   }
  for(count = 0, count < 5, count++){
-    userInput=prompt("");
+    userInput=Number(prompt("Enter a number"));
+    total++
  }
+alert("The total is " + total);
 
 
  
