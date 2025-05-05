@@ -24,7 +24,7 @@
   alert("You have "+ money+ " dollars."); 
   alert("Half of your money is "+ money/2+ " dollars.");
   alert(array[choice]);
-  alert("I predict you were born in" + (currentYear-userAge));
+  alert("I predict you were born in " + (currentYear-userAge));
   if (money >= 20){
     alert("You can afford a chocolate bar");
   }
