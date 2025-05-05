@@ -13,6 +13,7 @@
  var currentYear = 2025;
  let array =["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
  let choice= prompt("On a scale of 0-3 how much do you like chocolate");
+ let total =0;
  
  
 /**********
@@ -28,7 +29,9 @@
   if (money >= 20){
     alert("You can afford a chocolate bar");
   }
- 
+ for(count = 0, count < 5, count++){
+    userInput=prompt("");
+ }
 
 
  
