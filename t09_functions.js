@@ -7,19 +7,33 @@
  alert("Welcome to my website!");
 
  //Variables
- var userName = prompt("What is your name?");
- var userAge = Number(prompt("What is your age?"));
- var money = Number(prompt("How much pocket money they have?"));
  var currentYear = 2025;
  let array =["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
  let choice= prompt("On a scale of 0-3 how much do you like chocolate");
  let userTotal = 0;
  let userNumberChoice = 0;
  
- 
+ /**********
+  Functions
+  ***********/
+ function askUserName  {
+   userName = prompt("What is your name?");
+ }
+
+ function askUserAge  {
+    userAge = Number(prompt("What is your age?"));
+ }
+
+ function askUserMoney    {
+    money = Number(prompt("How much pocket money they have?"));
+ }
+
 /**********
   Main Code
-***********/
+  ***********/
+ askUserName();
+  askUserAge();
+  money();
   alert("Hi " + userName+".");
   alert("As of "+ currentYear+ " you are "+ userAge+ " years old.");
   alert("In 10 years you will be "+ (userAge+10) + " years old.");
@@ -39,6 +53,7 @@
   
   console.log('The total of all numbers is: ' + userTotal); 
 
+  
 
  
  
