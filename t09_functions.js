@@ -24,7 +24,9 @@
   if (money >= 20){
     alert("You can afford a chocolate bar");
   }
- 
+ else {
+    alert("You can't afford a chocolate bar");
+ }
  }
 
 /**********
