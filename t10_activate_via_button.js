@@ -4,7 +4,6 @@
  Written in 08/05/2025
  Purpose: Getting familiar with Functions
  *******************/
- alert("Welcome to my website!");
 
  
  /**********
@@ -19,12 +18,13 @@
   Functions
   ***********/
  function start () {
-    userName = askUserName;
-    userAge = askUserAge;
-    userMoney = askUserMoney;
+    userName = askUserName();
+    userAge = askUserAge();
+    userMoney = askUserMoney();
  }
 
  function askUserName ()  {
+alert("Welcome to my website!");
   prompt("What is your name?");
    alert("Hi " + userName+".");
  }
@@ -47,8 +47,6 @@
 /**********
   Main Code
 ***********/
- askUserName();
- askUserAge();
- askUserMoney();
+
  
  
