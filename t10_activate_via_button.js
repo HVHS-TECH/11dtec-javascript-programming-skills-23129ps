@@ -6,6 +6,15 @@
  *******************/
  alert("Welcome to my website!");
 
+ 
+ /**********
+  variables 
+  ***********/
+
+ var userName; 
+ var userAge;
+ var userMoney;
+
  /**********
   Functions
   ***********/
