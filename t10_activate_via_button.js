@@ -24,7 +24,7 @@
  }
 
  function askUserName ()  {
-alert("Welcome to my website!");
+ alert("Welcome to my website!");
   prompt("What is your name?");
    alert("Hi " + userName+".");
  }
