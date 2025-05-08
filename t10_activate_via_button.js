@@ -11,9 +11,9 @@
   variables 
   ***********/
 
- var userName; 
- var userAge;
- var userMoney;
+ let userName; 
+ let userAge;
+ let userMoney;
 
  /**********
   Functions
@@ -47,7 +47,6 @@
 /**********
   Main Code
 ***********/
- start();
  askUserName();
  askUserAge();
  askUserMoney();
