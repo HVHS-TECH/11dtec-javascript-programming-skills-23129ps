@@ -16,15 +16,15 @@
  /**********
   Functions
   ***********/
- function askUserName  {
+ function askUserName ()  {
    userName = prompt("What is your name?");
  }
 
- function askUserAge  {
+ function askUserAge () {
     userAge = Number(prompt("What is your age?"));
  }
 
- function askUserMoney    {
+ function askUserMoney  ()  {
     money = Number(prompt("How much pocket money they have?"));
  }
 
@@ -32,7 +32,7 @@
   Main Code
   ***********/
  askUserName();
-  askUserAge();
+ askUserAge();
   money();
   alert("Hi " + userName+".");
   alert("As of "+ currentYear+ " you are "+ userAge+ " years old.");
