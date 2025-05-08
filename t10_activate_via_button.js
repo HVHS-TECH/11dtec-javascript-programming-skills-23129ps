@@ -18,19 +18,25 @@
  /**********
   Functions
   ***********/
+ function start () {
+    userName = askUserName;
+    userAge = askUserAge;
+    userMoney = askUserMoney;
+ }
+
  function askUserName ()  {
-   userName = prompt("What is your name?");
+  prompt("What is your name?");
    alert("Hi " + userName+".");
  }
 
  function askUserAge () {
-    userAge = Number(prompt("What is your age?"));
+   Number(prompt("What is your age?"));
  }
 
  function askUserMoney  ()  {
-    money = Number(prompt("How much pocket money they have?"));
+    Number(prompt("How much pocket money they have?"));
     alert("You have "+ money+ " dollars."); 
-  if (money >= 20){
+  if (userMoney >= 20){
     alert("You can afford a chocolate bar");
   }
  else {
@@ -41,6 +47,7 @@
 /**********
   Main Code
 ***********/
+ start();
  askUserName();
  askUserAge();
  askUserMoney();
