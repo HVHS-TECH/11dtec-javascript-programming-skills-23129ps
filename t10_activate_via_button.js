@@ -26,7 +26,7 @@
  function askUserName ()  {
  alert("Welcome to my website!");
   prompt("What is your name?");
-   alert("Hi " + userName+".");
+   alert("Hi " + userName +".");
  }
 
  function askUserAge () {
