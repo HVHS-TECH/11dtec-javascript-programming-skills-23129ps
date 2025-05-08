@@ -11,6 +11,7 @@
   ***********/
  function askUserName ()  {
    userName = prompt("What is your name?");
+   alert("Hi " + userName+".");
  }
 
  function askUserAge () {
@@ -19,19 +20,18 @@
 
  function askUserMoney  ()  {
     money = Number(prompt("How much pocket money they have?"));
- }
-
-/**********
-  Main Code
-  ***********/
- askUserName();
- askUserAge();
-  money();
-  alert("Hi " + userName+".");
-  alert("You have "+ money+ " dollars."); 
+    alert("You have "+ money+ " dollars."); 
   if (money >= 20){
     alert("You can afford a chocolate bar");
   }
  
+ }
+
+/**********
+  Main Code
+***********/
+ askUserName();
+ askUserAge();
+ askUserMoney();
  
  
