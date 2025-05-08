@@ -1,8 +1,8 @@
 /********************
- Functions
+ Activation via button
  Written by Priya Silwal
  Written in 08/05/2025
- Purpose: Getting familiar with Functions
+ Purpose: Activation via button
  *******************/
 
  
@@ -25,17 +25,17 @@
 
  function askUserName ()  {
  alert("Welcome to my website!");
-  prompt("What is your name?");
-   alert("Hi " + userName +".");
+  userName = prompt("What is your name?");
+  alert("Hi " + userName +".");
  }
 
  function askUserAge () {
-   Number(prompt("What is your age?"));
+  userAge =Number(prompt("What is your age?"));
  }
 
  function askUserMoney  ()  {
-    Number(prompt("How much pocket money they have?"));
-    alert("You have "+ money+ " dollars."); 
+  userMoney= Number(prompt("How much pocket money they have?"));
+    alert("You have "+ userMoney+ " dollars."); 
   if (userMoney >= 20){
     alert("You can afford a chocolate bar");
   }
