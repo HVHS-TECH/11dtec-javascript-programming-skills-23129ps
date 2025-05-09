@@ -26,14 +26,19 @@
  function askUserName ()  {
  alert("Welcome to my website!");
   userName = prompt("What is your name?");
-  alert("Hi " + userName +".");
+  alert("Hi " + userName +" =!");
  }
 
  function askUserAge () {
+  currentYear = 2025;
   userAge =Number(prompt("What is your age?"));
+  alert("I predict you were born in " + (currentYear-userAge) + ".");
  }
 
  function askUserMoney  ()  {
+  let array =["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
+  let choice= prompt("On a scale of 0-3 how much do you like chocolate?");
+  alert(array[choice]);
   userMoney= Number(prompt("How much pocket money they have?"));
     alert("You have "+ userMoney+ " dollars."); 
   if (userMoney >= 20){
@@ -44,9 +49,3 @@
  }
  }
 
-/**********
-  Main Code
-***********/
-
- 
- 
