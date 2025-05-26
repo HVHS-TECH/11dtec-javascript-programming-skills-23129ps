@@ -53,6 +53,7 @@
 //restart//
  function restart () {
     var ask = prompt("Do you want to restart?");
+    console.log("Hello world!");
     while (ask =yes) {
         start();
     }
