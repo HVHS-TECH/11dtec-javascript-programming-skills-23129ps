@@ -13,6 +13,7 @@
  let userName; 
  let userAge;
  let userMoney;
+ let ask;
 
  /**********
   Functions
@@ -52,8 +53,8 @@
 
 //restart//
  function restart () {
-    var ask = prompt("Do you want to restart?");
-    console.log("Hello world!");
+    ask = prompt("Do you want to restart?");
+    console.log(ask);
     while (ask =yes) {
         start();
     }
