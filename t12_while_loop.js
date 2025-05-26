@@ -1,87 +1,58 @@
 /********************
- While Loop Practice
+ While loop
  Written by Priya Silwal
- Date: 08/05/2025
- Purpose: Learn how while loops work
-*******************/
+ Written in 08/05/2025
+ Purpose: While loop
+ *******************/
 
-// These are the variables we use
-let userName;
-let userAge;
-let userMoney;
+ 
+ /**********
+  variables 
+  ***********/
 
-// This starts the whole program
-function start() {
-  userName = askUserName();    // Ask name
-  userAge = askUserAge();      // Ask age
-  userMoney = askUserMoney();  // Ask money and chocolate question
-  usePromptLoop();             // First while loop using prompt
-  useBooleanLoop();            // Second while loop using confirm
-}
+ let userName; 
+ let userAge;
+ let userMoney;
 
-// Ask the user's name
-function askUserName() {
-  alert("Welcome to my website!");
-  let name = prompt("What is your name?");
-  alert("Hi " + name + "!");
-  return name;
-}
+ /**********
+  Functions
+  ***********/
+ function start () {
+    userName = askUserName();
+    userAge = askUserAge();
+    userMoney = askUserMoney();
+    restart();
+ }
 
-// Ask the user's age
-function askUserAge() {
-  let currentYear = 2025;
-  let age = Number(prompt("What is your age?"));
-  alert("I think you were born in " + (currentYear - age));
-  return age;
-}
+ function askUserName ()  {
+ alert("Welcome to my website!");
+  userName = prompt("What is your name?");
+  alert("Hi " + userName +" =!");
+ }
 
-// Ask about chocolate and money
-function askUserMoney() {
-  let chocolateOptions = [
-    "You don't like chocolate",
-    "Chocolate is okay",
-    "Chocolate is good",
-    "Chocolate is the best ever!"
-  ];
+ function askUserAge () {
+  currentYear = 2025;
+  userAge =Number(prompt("What is your age?"));
+  alert("I predict you were born in " + (currentYear-userAge) + ".");
+ }
 
-  let choice = prompt("How much do you like chocolate? (0 to 3)");
-  alert(chocolateOptions[choice]);
-
-  let money = Number(prompt("How much pocket money do you have?"));
-  alert("You have " + money + " dollars.");
-
-  if (money >= 20) {
-    alert("You can buy a chocolate bar!");
-  } else {
-    alert("You don't have enough for a chocolate bar.");
+ function askUserMoney  ()  {
+  let array =["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
+  let choice= prompt("On a scale of 0-3 how much do you like chocolate?");
+  alert(array[choice]);
+  userMoney= Number(prompt("How much pocket money they have?"));
+    alert("You have "+ userMoney+ " dollars."); 
+  if (userMoney >= 20){
+    alert("You can afford a chocolate bar");
   }
+ else {
+    alert("You can't afford a chocolate bar");
+ }
+ }
 
-  return money;
-}
-
-// First while loop using prompt and "y"
-function usePromptLoop() {
-  let answer = prompt("Do you want to do the loop? Type 'y' for yes");
-
-  while (answer === "y") {
-    alert("Loop will repeat again");
-    answer = prompt("Do you want to do the loop again? Type 'y' for yes");
-  }
-
-  alert("End of loop");
-}
-
-// Second while loop using a confirm box (true/false)
-function useBooleanLoop() {
-  let keepGoing = confirm("Do you want to do the loop again?");
-
-  while (keepGoing) {
-    alert("Loop will repeat again");
-    keepGoing = confirm("Do you want to do the loop again?");
-  }
-
-  alert("End of loop");
-}
-
-// Run the program
-start();
+ function restart () {
+    var ask = prompt("Do you want to restart?");
+    while (ask = yes) {
+        start();
+    }
+ } 
