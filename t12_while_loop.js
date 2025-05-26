@@ -51,5 +51,6 @@
  }
 
  function restart () {
-  start();
+    var ask = prompt("Do you want to restart?");
+    while (ask = "yes") {start();}
  }
