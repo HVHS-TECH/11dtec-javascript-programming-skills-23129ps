@@ -21,6 +21,7 @@
     userName = askUserName();
     userAge = askUserAge();
     userMoney = askUserMoney();
+    restart();
  }
 
  function askUserName ()  {
@@ -49,3 +50,6 @@
  }
  }
 
+ function restart () {
+  start();
+ }
