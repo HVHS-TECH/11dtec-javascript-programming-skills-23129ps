@@ -49,7 +49,7 @@
     alert("You can't afford a chocolate bar");
  }
  }
- 
+
 //restart//
  function restart () {
     var ask = prompt("Do you want to restart?");
