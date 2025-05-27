@@ -26,7 +26,7 @@ function start() {
 function askUserName() {  
     alert("Welcome to my website!");  
     userName = prompt("What is your name?");  
-    alert("Hi " + userName + " =!");  
+    alert("Hi " + userName + " !");  
 }  
 
 function askUserAge() {  
@@ -50,30 +50,16 @@ function askUserMoney() {
 }  
 
 /**********  
- Learning Goal  
-***********/  
-// We are learning how to:  
-// Use a while loop to repeat a section of code while a condition is met.  
-
-// By the end of this topic you will have:  
-// - Gone through the slides.  
-// - Copied your template from task 1.  
-// - Updated the header comments and console.log()  
-// - Created a program that includes while loops  
-
-/**********  
  While Loops  
 ***********/  
 
 let userResponse = prompt("Would you like to continue with the loop? (y/n)");  
 while (userResponse === "y") {  
     alert("Loop will repeat again");  
-    userResponse = prompt("Would you like to continue with the loop? (y/n)");  
+    start(); 
 }  
+
 alert("End of loop");  
 
-// Second while loop using confirm statement  
-while (confirm("Would you like to continue with the loop?")) {  
-    alert("Loop will repeat again");  
-}  
-alert("End of loop");  
+
+
