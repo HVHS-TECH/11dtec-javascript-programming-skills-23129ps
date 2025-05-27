@@ -8,7 +8,7 @@
 let userName;  
 let userAge;  
 let userMoney;  
-let userResponse = "y";  // Initialize userResponse globally
+let userResponse = "y";  
 
 /**********  
  Functions  
@@ -66,7 +66,7 @@ while (userResponse === "y") {
     alert("Loop will repeat again");  
 
     // Remove `let` to update the global variable properly
-    userResponse = prompt("Would you like to continue with the loop? (y/n)");  
+    userResponse = prompt("Loop will repeat again\nWould you like to continue with the loop? (y/n)");  
 }
 
 alert("End of loop");  // Exit message when user enters 'n'
