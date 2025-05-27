@@ -32,9 +32,12 @@ function askUserName() {
 function askUserAge() {
     let currentYear = 2025;
     userAge = Number(prompt("What is your age?"));
+    if (userAge<0 || userAge>100){
+        userAge = Number(prompt("Invalid! You must enter a valid age between 0-100"));
+        alert("I predict you were born in " + (currentYear - userAge) + ".");
+    }
+    else {
     alert("I predict you were born in " + (currentYear - userAge) + ".");
-    if (userAge<0 || userAge>130){
-        userAge = Number(prompt("Invalid! You must enter a number between "));
     }
 }
 
