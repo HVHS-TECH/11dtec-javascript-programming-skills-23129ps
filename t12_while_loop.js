@@ -18,6 +18,7 @@ function start() {
     userName = askUserName();  
     userAge = askUserAge();  
     userMoney = askUserMoney();  
+    end();
 }
 
 function askUserName() {  
@@ -60,17 +61,14 @@ function askUserMoney() {
 /**********  
  While Loop  
 ***********/
-
+function end () {
 while (userResponse === "y") {  
-    start();  
-    alert("Loop will repeat again");  
-
-    // Remove `let` to update the global variable properly
+    start();   
     userResponse = prompt("Loop will repeat again\nWould you like to continue with the loop? (y/n)");  
 }
 
-alert("End of loop");  // Exit message when user enters 'n'
-    
+alert("End of loop");  
+   } 
 
 
 
