@@ -59,8 +59,10 @@ while (userResponse === "y") {
     let userResponse = prompt("Would you like to continue with the loop? (y/n)");  
     alert("Loop will repeat again");  
 }  
-
-    alert("End of loop");  
+if (userResponse === "n") {
+alert("End of loop"); 
+}
+ 
     
 
 
