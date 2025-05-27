@@ -34,9 +34,7 @@ function askUserAge() {
     userAge = Number(prompt("What is your age?"));
     if (userAge<0 || userAge>130){
         userAge = Number(prompt("Invalid! You must enter a valid age between 0-130"));
-        alert("I predict you were born in " + (currentYear - userAge) + ".");
-    }
-    else {
+   
     alert("I predict you were born in " + (currentYear - userAge) + ".");
     }
 }
