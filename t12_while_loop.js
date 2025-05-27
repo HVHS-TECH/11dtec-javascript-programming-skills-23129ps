@@ -53,10 +53,11 @@ function askUserMoney() {
  While Loops  
 ***********/  
 
-let userResponse = prompt("Would you like to continue with the loop? (y/n)");  
+let userResponse = "y";  
 while (userResponse === "y") {  
     alert("Loop will repeat again");  
     start(); 
+    let userResponse = prompt("Would you like to continue with the loop? (y/n)");  
 }  
 
 alert("End of loop");  
