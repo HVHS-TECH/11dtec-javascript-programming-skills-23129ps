@@ -55,9 +55,9 @@ function askUserMoney() {
 
 let userResponse = "y";  
 while (userResponse === "y") {  
-    alert("Loop will repeat again");  
     start(); 
     let userResponse = prompt("Would you like to continue with the loop? (y/n)");  
+    alert("Loop will repeat again");  
 }  
 
     alert("End of loop");  
