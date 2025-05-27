@@ -33,6 +33,9 @@ function askUserAge() {
     let currentYear = 2025;
     userAge = Number(prompt("What is your age?"));
     alert("I predict you were born in " + (currentYear - userAge) + ".");
+    if (userAge<0 || userAge>130){
+        userAge = Number(prompt("Invalid! You must enter a number between "));
+    }
 }
 
 function askUserMoney() {
