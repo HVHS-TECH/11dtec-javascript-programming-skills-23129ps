@@ -71,7 +71,6 @@ function restart() {
     while (ask === "y") {
         alert("Loop will repeat again");
         start();
-        ask = prompt("Do you want to restart? (y/n)"); // Prompting again inside loop
     }
     
     alert("End of loop");
