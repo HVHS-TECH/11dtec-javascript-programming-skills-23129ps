@@ -51,11 +51,11 @@ function askUserMoney() {
 
 // First while loop using user input
 function restart() {
-    let ask = prompt("Do you want to restart? (y/n)").toLowerCase();
+    let ask = prompt("Do you want to restart? (y/n)");
     
     while (ask === "y") {
         alert("Loop will repeat again");
-        ask = prompt("Do you want to restart? (y/n)").toLowerCase();
+        ask = prompt("Do you want to restart? (y/n)");
     }
     
     alert("End of loop");
