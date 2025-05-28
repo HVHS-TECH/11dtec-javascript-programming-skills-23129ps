@@ -1,62 +1,48 @@
 /********************
  Activation via button
- Written by Priya Silwal
  Written in 28/05/2025
  Purpose: Activation via button
  *******************/
 
  
- /**********
-  variables 
-  ***********/
+ let userName;
 
- let userName; 
- let userAge;
- let userMoney;
+start();
 
- /**********
-  Functions
-  ***********/
- function start () {
-    userName = askUserName();
-    userAge = askUserAge();
-    userMoney = askUserMoney();
- }
+/********************************************/
+// func mainFunc();
+/********************************************/
 
- function askUserName ()  {
- alert("Welcome to my website!");
-  userName = prompt("What is your name?");
-  if (isNaN(userName)){
-    alert("Hi " + userName +" =!");
-  }
-  else{
-    userName = prompt("Invalid, Please enter a valid name");
-  }
- }
+function start() {
+    userName = getUserReply("What's your name?", "s");
+    userAge = getUserReply("What's your age?", "n");
+    alert("Your name is: " + userName);
+    alert("Your age is: " + userAge);
+}
 
- function askUserAge () {
-  currentYear = 2025;
-  userAge =Number(prompt("What is your age?"));
-   if ( userAge>0 && userAge<120 && isNaN(userAge)){
-    alert("I predict you were born in " + (currentYear-userAge) + ".");
-   }
-  else {
-    userAge =Number(prompt("Invalid, Please enter a valid age"));
-  }
- }
+/********************************************/
+// func getUserName();
+/********************************************/
 
- function askUserMoney  ()  {
-  let array =["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
-  let choice= prompt("On a scale of 0-3 how much do you like chocolate?");
-  alert(array[choice]);
-  userMoney= Number(prompt("How much pocket money they have?"));
-    alert("You have "+ userMoney+ " dollars."); 
-  if (userMoney >= 20){
-    alert("You can afford a chocolate bar");
-  }
- else {
-    alert("You can't afford a chocolate bar");
- }
- }
-
-
+function getUserReply(_text, _type) {
+    let userReplyIsInvalid = true;
+    while(userReplyIsInvalid) {
+        userReply = prompt(_text);
+        if (userReply == null) {
+            console.log("Invalid");
+            userReply = "Invalid";
+            return userReply;
+        } else if (_type == "n"){
+            userReply = userReply.trim();
+            userReply = Number(userReply);
+            console.log("Valid");
+            userReplyIsInvalid = false;
+            return userReply;
+        } else if (_type == "s"){
+            userReply = userReply.trim();
+            console.log("Valid");
+            userReplyIsInvalid = false;
+            return userReply;
+        }           
+    }
+}
