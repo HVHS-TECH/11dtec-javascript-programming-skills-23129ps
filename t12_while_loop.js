@@ -62,9 +62,9 @@ function askUserMoney() {
  While Loop  
 ***********/
 function end () {
-while (userResponse === "y") {  
+while (userResponse === "y") {    
+    userResponse = prompt("Loop will repeat again\nWould you like to continue with the loop? (y/n)");
     start();   
-    userResponse = prompt("Loop will repeat again\nWould you like to continue with the loop? (y/n)");  
 }
 
 alert("End of loop");  
