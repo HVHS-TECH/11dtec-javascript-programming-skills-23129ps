@@ -24,10 +24,14 @@
  }
 
  function askUserName ()  {
-    if (userName)
  alert("Welcome to my website!");
   userName = prompt("What is your name?");
-  alert("Hi " + userName +" =!");
+  if (!isNaN(userName)){
+    alert("Hi " + userName +" =!");
+  }
+  else{
+    userName = prompt("Invalid, Please enter a valid name");
+  }
  }
 
  function askUserAge () {
