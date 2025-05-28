@@ -24,7 +24,6 @@
  }
 
  function askUserName ()  {
-    if ()
  alert("Welcome to my website!");
   userName = prompt("What is your name?");
   alert("Hi " + userName +" =!");
@@ -33,7 +32,12 @@
  function askUserAge () {
   currentYear = 2025;
   userAge =Number(prompt("What is your age?"));
-  alert("I predict you were born in " + (currentYear-userAge) + ".");
+   if ( userAge>0 && userAge<120){
+    alert("I predict you were born in " + (currentYear-userAge) + ".");
+   }
+  else {
+    userAge =Number(prompt("What is your age?"));
+  }
  }
 
  function askUserMoney  ()  {
