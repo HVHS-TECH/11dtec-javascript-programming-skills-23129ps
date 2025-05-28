@@ -36,7 +36,7 @@
     alert("I predict you were born in " + (currentYear-userAge) + ".");
    }
   else {
-    userAge =Number(prompt("What is your age?"));
+    userAge =Number(prompt("Invalid, Please enter a valid age"));
   }
  }
 
