@@ -26,7 +26,7 @@
  function askUserName ()  {
  alert("Welcome to my website!");
   userName = prompt("What is your name?");
-  if (!isNaN(userName)){
+  if (isNaN(userName)){
     alert("Hi " + userName +" =!");
   }
   else{
