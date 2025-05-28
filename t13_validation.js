@@ -24,6 +24,7 @@
  }
 
  function askUserName ()  {
+    if (userName)
  alert("Welcome to my website!");
   userName = prompt("What is your name?");
   alert("Hi " + userName +" =!");
@@ -32,7 +33,7 @@
  function askUserAge () {
   currentYear = 2025;
   userAge =Number(prompt("What is your age?"));
-   if ( userAge>0 && userAge<120){
+   if ( userAge>0 && userAge<120 && isNaN(userAge)){
     alert("I predict you were born in " + (currentYear-userAge) + ".");
    }
   else {
