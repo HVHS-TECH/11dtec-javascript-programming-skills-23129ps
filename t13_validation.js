@@ -24,6 +24,7 @@
  }
 
  function askUserName ()  {
+    if ()
  alert("Welcome to my website!");
   userName = prompt("What is your name?");
   alert("Hi " + userName +" =!");
@@ -49,4 +50,4 @@
  }
  }
 
- 
+
