@@ -58,18 +58,18 @@ function askUserMoney() {
     return money;
 }
 
-/**********  
- While Loop  
-***********/
-function end () {
-while (userResponse === "y") {    
-    userResponse = prompt("Loop will repeat again\nWould you like to continue with the loop? (y/n)");
-    start();   
+while (userResponse == "y") {
+    alert("Loop will repeat again.")
+    userResponse = prompt("Would you like to continue the loop? \nTo continue enter y.");
 }
 
-alert("End of loop");  
-   } 
+alert("End of loop.")
 
+while (confirm("Would you like to continue the loop?") == true) {
+    alert("Loop will repeat again.")
+}
+
+alert("End of loop.")
 
 
 
