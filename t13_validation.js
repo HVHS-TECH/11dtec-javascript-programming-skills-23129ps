@@ -1,48 +1,53 @@
 /********************
  Activation via button
- Written in 28/05/2025
+ Written on 29/05/2025 by Priya Silwal
  Purpose: Activation via button
  *******************/
 
- 
- let userName;
+// Declare variables for user details
+let userName;
+let userAge;
+let money;
+let choice = [
+    "Mars bar", 
+    "Moro bar", 
+    "King Size Crunchy", 
+    "Dairy Milk Block", 
+    "Lindt Block"
+];
 
+// Start the process
 start();
 
 /********************************************/
-// func mainFunc();
+// Main function to begin execution
 /********************************************/
 
 function start() {
-    userName = getUserReply("What's your name?", "s");
-    userAge = getUserReply("What's your age?", "n");
+    getUserDetails();
+    getPocketMoney();
+}
+
+function getUserDetails() {
+    userName = prompt("What's your name?");
+    
+    // Validate name input
+    while (userName == null || userName.trim() === "" || !isNaN(userName)) {
+        userName = prompt("Invalid input. Please enter a valid name.");
+    }
+    
+    userAge = prompt("What's your age?");
+    // Validate age input
+    while (userAge == null || userAge.trim() === "" || isNaN(userAge)) {
+        userAge = prompt("Invalid input. Please enter a valid age.");
+    }
+    
     alert("Your name is: " + userName);
     alert("Your age is: " + userAge);
 }
 
-/********************************************/
-// func getUserName();
-/********************************************/
-
-function getUserReply(_text, _type) {
-    let userReplyIsInvalid = true;
-    while(userReplyIsInvalid) {
-        userReply = prompt(_text);
-        if (userReply == null) {
-            console.log("Invalid");
-            userReply = "Invalid";
-            return userReply;
-        } else if (_type == "n"){
-            userReply = userReply.trim();
-            userReply = Number(userReply);
-            console.log("Valid");
-            userReplyIsInvalid = false;
-            return userReply;
-        } else if (_type == "s"){
-            userReply = userReply.trim();
-            console.log("Valid");
-            userReplyIsInvalid = false;
-            return userReply;
-        }           
-    }
+function getPocketMoney() {
+    money = prompt("How much pocket money do you have? (Enter a number from 1 to 5)");
+    
+    alert("You have $" + money + ".\nYou can buy a " + choice[money] + ".");
 }
