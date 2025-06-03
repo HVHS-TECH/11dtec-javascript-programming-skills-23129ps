@@ -8,4 +8,7 @@ var userName = prompt("What is your name?");
 if (userName == null){
     return;
 }
+while (numberOfSeats === "" || isNaN(numberOfSeats) || numberOfSeats <= 0 || numberOfSeats > 9) {
+    numberOfSeats = prompt("Invalid input. Please enter a valid number between 1 to 9.");}
+    
 }
